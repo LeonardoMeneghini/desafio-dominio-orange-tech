@@ -3,14 +3,19 @@ package src.com.orangetech;
 import java.time.LocalDate;
 
 public class Mentoria extends Conteudo {
-    private String titulo;
-    private String descricao;
-    LocalDate data;
+
+    private LocalDate data;
+
+
+    public Mentoria(){
+
+    }
 
 
     public LocalDate getData(){
         return data;
     }
+
 
     public void setData(LocalDate data){
         this.data = data;
@@ -19,7 +24,7 @@ public class Mentoria extends Conteudo {
     @Override
     public String toString(){
         return "Mentoria{" +
-                "titulo='" + titulo + '\'' +
+                "titulo='" + getTitulo () + '\'' +
                 ", descricao='" + getDescricao () + '\'' +
                 ", data=" + data +
                 '}';
